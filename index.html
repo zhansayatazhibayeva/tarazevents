@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taraz Events</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+	<!-- Our CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Events held in Taraz city</h1>
+        <p>Here you can view a list of events to attend</p>
+    </header>
+    <main>
+        <form id = "events_details_form">
+            <label for = "name">Event's Theme</label>
+            <input type = "text" id = "name" placeholder="Event name" required>
+
+            <label for = "location">Event's Location</label>
+            <input type = "text" id = "location" placeholder="Where is this event will be held?">
+
+            <label for = "photo">Event's Photo</label>
+            <input type = "url" id = "photo" placeholder="Provide a URL for photo">
+
+            <label for = "description"> Event's Descrioption</label>
+            <textarea id = "description" placeholder="Describe a destination"></textarea>
+
+            <button type = "submit">Add to List</button>
+        </form>
+        <article>
+            <h2 id = "title">Enter Event's Details</h2>
+            <div id = "events_container">
+                <div class = "card">
+                    <img src = "images/nysana.jpeg">
+                        <div class = "card-body">
+                            <h3>Nysana Concert</h3>
+                            <h4>Balasagun concert hall, Tole bi 62</h4>
+                            <p class = "card-text">Comedy show, 6000-10000tg</p>
+                            <button>Remove</button>
+                        </div>
+                </div>
+                <div class = "card">
+                    <img src = "images/alisher.jpeg">
+                    <div class = "card-body">
+                        <h3>Alisher Karimov Concert</h3>
+                        <h4>Balasagun concert hall, Tole bi 62</h4>
+                        <p class = "card-text">Concert, 2000-5000tg</p>
+                        <button>Remove</button>
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+        </article>
+    </main>
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
